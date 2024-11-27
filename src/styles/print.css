@@ -1,0 +1,84 @@
+/* Styles d'impression */
+@media print {
+  /* Cacher les éléments non nécessaires */
+  nav,
+  footer,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Styles de base */
+  body {
+    font-family: 'system-ui', -apple-system, sans-serif;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+
+  /* En-tête */
+  h1 {
+    font-size: 24pt;
+    margin-bottom: 16pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+    margin-top: 24pt;
+    margin-bottom: 12pt;
+  }
+
+  /* Contenu */
+  p {
+    font-size: 12pt;
+    margin-bottom: 8pt;
+  }
+
+  /* Listes */
+  ul, ol {
+    padding-left: 20pt;
+    margin-bottom: 16pt;
+  }
+
+  li {
+    font-size: 12pt;
+    margin-bottom: 4pt;
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 16pt 0;
+  }
+
+  /* Tableaux */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16pt 0;
+  }
+
+  th, td {
+    padding: 8pt;
+    border: 1pt solid #000;
+    text-align: left;
+  }
+
+  /* Sauts de page */
+  .page-break {
+    page-break-before: always;
+  }
+
+  /* Liens */
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  /* QR Code */
+  .qr-code {
+    margin: 16pt 0;
+    text-align: center;
+  }
+}
